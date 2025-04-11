@@ -13,7 +13,7 @@ def load_csv_data(filepath):
     df[["open", "high", "low", "close","volume"]] = df[["open", "high", "low", "close","volume"]].astype(float)
     return df
 
-def fetch_binance_data(symbol="BTCUSDT", interval = "1m", limit=1000):
+def fetch_binance_data(symbol="BTCUSDT", interval = "5m", limit=1000):
     url = f"https://api.binance.com/api/v3/klines?symbol={symbol}&interval={interval}&limit={limit}"
     response = requests.get(url)
     data = response.json()
