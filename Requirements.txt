@@ -1,0 +1,4 @@
+The python libraries are as follow:
+1) 'Pandas' for data manipulation
+2) 'requests' for API calls to Binance
+3) 'ta-lib' for technical analysis
