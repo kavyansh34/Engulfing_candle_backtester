@@ -18,10 +18,11 @@ This project is a Python-based backtesting engine for a custom crypto trading st
 The backtester adjusts the capital after each trade, depending on win or loss, based on risk-to-reward ratio.
 
 ## Files & Functions
-** load_csv_data(filepath)
+& load_csv_data(filepath)
   * Loads and preprocesses OHLCV data from CSV with timestamp formatting and float conversion.
-** fetch_binance_data(symbol, interval, limit)
-  *
+& fetch_binance_data(symbol, interval, limit)
+  * Fetches latest OHLCV data from Binance API for the given symbol and interval.
+  
 
 
     
