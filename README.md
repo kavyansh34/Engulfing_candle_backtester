@@ -3,13 +3,13 @@ This project is a Python-based backtesting engine for a custom crypto trading st
 
 ## Strategy logic
 * Bullish signal (signal == 1)
-  * Bullish engulfing pattern over the last two candles.
-  * RSI between 30 and 40.
-  * Volume higher than 14-period EMA of volume.
+  * Bullish engulfing pattern over the last two candles
+  * RSI between below 40
+  * Volume higher than 14-period EMA of volume
 * Bearish signal (signal == 2)
-  * Bearish engulfing pattern over the last two candles.
-  * RSI between 60 and 70.
-  * Volume higher than 99-period EMA of volume.
+  * Bearish engulfing pattern over the last two candles
+  * RSI between above 60
+  * Volume higher than 14-period EMA of volume
 
 ## Capital Managemant
 * Initial Capital: $10,000
@@ -21,8 +21,8 @@ The backtester adjusts the capital after each trade, depending on win or loss, b
 1) All the dependencies are mentioned in 'Requirements.txt'
 2) Sample data set of BTCUSDT past 1 year in 5m timeframe is provided in 'BTCUSDT_5m_365.csv'
 3) Sample data format is {timestamp, open, high, low, close, volume}
-4) No slippage or fees modeled — pure backtest.
-5) Risk-reward ratio is static and can be optimized.
+4) No slippage or fees modeled — pure backtest
+5) Risk-reward ratio is static and can be optimized
 
 ## Future enhancement
 * Trailing stoploss and dynamic position sizing
